@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styless.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ticket</title>
+
+</head>
+<body>
+    <section class="nav">
+
+        <div class="head">
+            <h1 class="heads">Purchase your tickets</h1>
+        </div>
+
+    <div class="ticketing">
+
+        <div class="viamobile">
+            <p>Show your tickets via mobile</p>
+            <p>device or print at home</p>
+        </div>
+
+        <div class="mobileicon">
+            <img src="images/mobileicon.png" alt="icon">
+        </div>
+
+    </div>
+    </section> 
+    <section class="hyperlinks">
+        <p>
+            <a href="">Home </a>  >  
+            <a href="ticket.html"><span class="linkone">Tickets</span> </a>  >  
+            <a href="details.html" class="links">Details</a>  > 
+            <a href="payment.html" class="links">Payments</a> > 
+            <a href="confirmation.html" class="links">Confirmation</a></p>
+    </section>
+    <br>
+  <h1 class="dateheading">Please select a suitable date for arrival</h1>
+  <br>
+  <!-- dates -->
+  <fieldset>
+  <table class="sumta"> 
+    <h2 class="sumta-heading" id="htwo">Summary table</h2>
+
+    <label for="" id="tab">Date</label>           
+    <p id="sumta-headingdate"></p>
+
+    <label for="" id="tab1">Time</label>   
+    <span id="sumta-headingtime"></span>
+
+    <label for="" id="tab2">Duration</label>
+    <span id="sumta-headingduration"></span>
+    
+
+
+  <div id="cost">
+    <h3 class="sumta-heading" id="hthree">Ticket Cost</h3>
+    <div class="guestprice">
+      <div>
+        <span id="FAN"></span>
+      </div>
+      <div>
+        <span id="FCN"></span>
+      </div>
+      <div>
+        <span id="SLAN"></span>
+      </div>
+      <div>
+        <span id="SLCN"></span>
+      </div>
+      <div>
+        <span id="INF"></span>
+      </div>
+    <h5>Total = <span id="totalinsumtable"></span></h5>
+  </div>
+  </div>
+
+  </table>
+</fieldset>
+    <div class="calendar">
+      <div class="calmonth">
+        <label>
+          <select class="month" name="months">
+            <option class="mon" name="1">January</option>
+            <option class="mon" name="2">February</option>
+            <option class="mon" name="3">March</option>
+            <option class="mon" name="4">April</option>
+            <option class="mon" name="5">May</option>
+            <option class="mon" name="6">June</option>
+            <option class="mon" name="7">July</option>
+            <option class="mon" name="8">August</option>
+            <option class="mon" name="9">September</option>
+            <option class="mon" name="10">October</option>
+            <option class="mon" name="11">November</option>
+            <option class="mon" name="12">December</option>
+          </select>
+        </label>
+        <label>
+          <select class="year" name="years" size="1">
+            <option class="yearnums">2030</option>
+            <option class="yearnums">2029</option>
+            <option class="yearnums">2028</option>
+            <option class="yearnums">2027</option>
+            <option class="yearnums">2026</option>
+            <option class="yearnums">2025</option>
+            <option class="yearnums">2024</option>
+            <option class="yearnums">2023</option>
+          </select>
+        </label>
+      </div>
+      <div class="weeknames">
+        <div class="weekdays">Sun</div>
+        <div class="weekdays">Mon</div>
+        <div class="weekdays">Tue</div>
+        <div class="weekdays">Wed</div>
+        <div class="weekdays">Thu</div>
+        <div class="weekdays">Fri</div>
+        <div class="weekdays">Sat</div>
+      </div>
+      <div class="date">
+        <div class="daterows">
+          <div class="datenumber">1</div>
+          <div class="datenumber">2</div>
+          <div class="datenumber">3</div>
+          <div class="datenumber">4</div>
+          <div class="datenumber">5</div>
+          <div class="datenumber">6</div>
+          <div class="datenumber">7</div>
+        </div>
+        <div class="daterows">
+          <div class="datenumber">8</div>
+          <div class="datenumber">9</div>
+          <div class="datenumber">10</div>
+          <div class="datenumber">11</div>
+          <div class="datenumber">12</div>
+          <div class="datenumber">13</div>
+          <div class="datenumber">14</div>
+        </div>
+        <div class="daterows">
+          <div class="datenumber">15</div>
+          <div class="datenumber">16</div>
+          <div class="datenumber">17</div>
+          <div class="datenumber">18</div>
+          <div class="datenumber">19</div>
+          <div class="datenumber">20</div>
+          <div class="datenumber">21</div>
+        </div>
+        <div class="daterows">
+          <div class="datenumber">22</div>
+          <div class="datenumber">23</div>
+          <div class="datenumber">24</div>
+          <div class="datenumber">25</div>
+          <div class="datenumber">26</div>
+          <div class="datenumber">27</div>
+          <div class="datenumber">28</div>
+        </div>
+        <div class="daterows">
+          <div class="datenumber">29</div>
+          <div class="datenumber">30</div>
+          <div class="datenumber">31</div>
+          <div class="datenumber"></div>
+          <div class="datenumber"></div>
+          <div class="datenumber"></div>
+          <div class="datenumber"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pick"></div>
+    <table class="duta">
+      <h1 class="dateheading">Time slots and duration of opening hours</h1>
+      <h4>*Users will be charged based on 1 hour based time slots</h4>
+      <h4>*Please note that for Infants (SL or Foreigner) (under 4 years) entrance is completely free </h4>
+   <br>
+      <tr>
+        <th class="table-heading">Description</th>
+        <th class="table-heading">Hour</th>
+        <th class="table-heading">Charge</th>
+      </tr>
+
+      <tr>
+        <td>Foreigner Adult</td>
+        <td>Normal Hour</td>
+        <td>10 USD</td>
+      </tr>
+
+      <tr>
+        <td>Foreigner Adult </td>
+        <td>Peak Hour</td>
+        <td>13 USD</td>
+      </tr>
+
+      <tr>
+          <td>Foreigner Child</td>
+          <td>Normal Hour</td>
+          <td>5 USD</td>
+        </tr>
+
+        <tr>
+          <td>Foreigner Child </td>
+          <td>Peak Hour</td>
+          <td>8 USD</td>
+        </tr>
+
+        <tr>
+          <td>SL Adult </td>
+          <td>Normal Hour</td>
+          <td>4 USD</td>
+        </tr>
+
+        <tr>
+          <td>SL Adult </td>
+          <td>Peak Hour</td>
+          <td>6 USD</td>
+        </tr>
+
+        <tr>
+          <td>SL Child </td>
+          <td>Normal Hour</td>
+          <td>2 USD</td>
+        </tr>
+
+        <tr>
+          <td>SL Child </td>
+          <td>Peak Hour</td>
+          <td>3 USD</td>
+        </tr>
+
+        <tr>
+          <td>Infant</td>
+          <td>Free</td>
+          <td>Free</td>
+        </tr>
+
+  </table>
+<br>
+    <h1 class="dateheading">Please select your prefered time slot:</h1>
+    <div class="slo">
+    <select class="options" multiple>
+        <option value="slot1" id="slo4">07:00 am - 08:00 am</option>
+        <option value="slot2" id="slo4">08:00 am - 09:00 am</option>
+        <option value="slot3" id="slo4">09:00 am - 10:00 am</option>
+    </select>
+
+    <select class="options" multiple>
+        <option value="slot4" id="slo4">10:00 am - 11:00 am (Peak Hour)</option>
+        <option value="slot5" id="slo4">11:00 am - 12:00 am (Peak Hour)</option>
+        <option value="slot6" id="slo4">12:00 am - 01:00 am (Peak Hour)</option>
+    </select>
+
+    <select class="options" multiple>
+        <option value="slot7">01:00 am - 02:00 am</option>
+        <option value="slot8" id="slo4">02:00 am - 03:00 am (Peak Hour)</option>
+        <option value="slot9" id="slo4">03:00 am - 04:00 am (Peak Hour)</option>
+    </select>
+       
+    <select class="options" multiple>
+        <option value="slot10" id="slo4">04:00 am - 05:00 am (Peak Hour)</option>
+        <option value="slot11" id="slo4">05:00 am - 06:00 pm (Peak Hour)</option>
+    </select>
+</div>
+
+<br>
+    <h1 class="dateheading">Number of tickets needed as per age</h1>
+    <!-- guests -->
+    <section class="guests">
+        <div class="main">
+            <div class="head">
+                <h2 class="down">Guests</h2>
+                <p><i class="fa-sharp fa-solid fa-bolt space" style="color: #eae24f;"></i>Likely to sell out</p>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <h3>SL Adult</h3>
+                    <span>Above 15yrs</span>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-minus minus" button onclick="minus()"></i>
+                    <h3 id="mid">0</h3>
+                    <i class="fa-solid fa-plus plus" button onclick="plus()"></i>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <h3>SL Child</h3>
+                    <span>5 to 14yrs</span>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-minus minus" button onclick="minus1()"></i>
+                    <h3 id="mid1">0</h3>
+                    <i class="fa-solid fa-plus plus" button onclick="plus1()"></i>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <h3>Foreigner Adult</h3>
+                    <span>Above 18yrs</span>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-minus minus" button onclick="minus2()"></i>
+                    <h3 id="mid2">0</h3>
+                    <i class="fa-solid fa-plus plus" button onclick="plus2()"></i>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <h3>Foreigner Child</h3>
+                    <span>17yrs</span>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-minus minus" button onclick="minus3()"></i>
+                    <h3 id="mid3">0</h3>
+                    <i class="fa-solid fa-plus plus" button onclick="plus3()"></i>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <h3>Infant</h3>
+                    <span>Under 4yrs</span>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-minus minus" button onclick="minus4()"></i>
+                    <h3 id="mid4">0</h3>
+                    <i class="fa-solid fa-plus plus" button onclick="plus4()"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+   <!-- duration -->
+    <br>
+    <!-- table -->
+    <br>
+    <section class="conbutton">
+        <button> <a href="details.html">Continue with Purchase</a></button>
+    </section>
+    
+   
+    <script src="js/pages.js"></script>
+    <script>
+      GetTotal();
+      GetTotal1();
+      GetTotal2();
+      GetTotal3();
+      GetTotal4();
+      Sumtadutime();
+   </script>
+</body>
+</html>

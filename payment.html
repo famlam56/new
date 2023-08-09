@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styless.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment</title>
+</head>
+<body>
+
+    <section class="nav">
+        <div class="head">
+            <h1 class="heads">Payment</h1>
+        </div>
+
+    <div class="ticketing">
+
+        <div class="viamobile">
+            <p>Show your tickets via mobile</p>
+            <p>device or print at home</p>
+        </div>
+
+        <div class="mobileicon">
+            <img src="images/mobileicon.png" alt="icon">
+        </div>
+
+    </div>
+    </section> 
+    <section class="hyperlinks">
+        <p>
+            <a href="">Home </a>  > 
+            <a href="ticket.html" class="links">Tickets</a>  >  
+            <a href="details.html" class="links">Details</a>  > 
+            <a href="payment.html" class="links"><span class="linkone">Payment</span></a> > 
+            <a href="confirmation.html" class="links">Confirmation</a>
+        </p>
+    </section>
+    <br>
+
+      <fieldset>
+        <table class="sumta"> 
+          <h2 class="sumta-heading" id="htwo">Summary table</h2>
+      
+          <label for="" id="tab">Date</label>           
+          <p id="sumta-headingdate"></p>
+      
+          <label for="" id="tab1">Time</label>   
+          <span id="sumta-headingtime"></span>
+      
+          <label for="" id="tab2">Duration</label>
+          <span id="sumta-headingduration"></span>
+          
+      
+      
+        <div id="cost">
+          <h3 class="sumta-heading" id="hthree">Ticket Cost</h3>
+          <div class="guestprice">
+            <div>
+              <span id="FAN"></span>
+            </div>
+            <div>
+              <span id="FCN"></span>
+            </div>
+            <div>
+              <span id="SLAN"></span>
+            </div>
+            <div>
+              <span id="SLCN"></span>
+            </div>
+            <div>
+              <span id="INF"></span>
+            </div>
+          <h5>Total = <span id="totalinsumtable"></span></h5>
+        </div>
+        </div>
+      
+        </table>
+      </fieldset>
+      <div class="container">
+        <form id="forms">
+          <h2>Payment</h2>
+          <br>
+          <div id="error"></div>
+          <div class="input">
+            <label>Card Number</label>
+            <input type="text" placeholder="1111-1111-1111" id="CardNUmber"  pattern="1111-1111-1111"  required />
+            <div id="ermsg"></div>
+          </div>
+    
+    
+          <div class="input">
+            <label>Expiry Date</label>
+            <input type="date" placeholder="02/11/2004" id="dateex" required pattern="02/11/2004"/>
+          </div>
+    
+          <div class="input">
+            <label>Name on the card</label>
+            <input type="name" placeholder="John Doe" id="Cname" required pattern="John Doe"/>
+          </div>
+    
+          <div class="input">
+            <label>CVC/CVV</label>
+            <input type="text" placeholder="453" id="CVC/CVV" maxlength="3" required pattern="453"/>
+          </div>
+          <br>
+          <button class="payb">Pay</button>
+        </form>
+      </div>
+
+
+    <section class="conbutton">
+        <button onclick="nextConf()">Continue with Purchase</button>
+    </section>
+    <script src="js/pages.js"></script> <script>
+      GetTotal();
+      GetTotal1();
+      GetTotal2();
+      GetTotal3();
+      GetTotal4();
+      Sumtadutime();
+   </script>
+</body>
+</html>

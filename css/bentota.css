@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #43455C;
+}
+header {
+    padding: 10px 50px;
+    background: #C5C6C7;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+nav .lo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #66FCF1;
+}
+
+nav .hamburger-btn i{
+    display: none;
+}
+
+/* Drop Down Navigation Bar */
+
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-content {
+    position: absolute;
+    background-color: #C5C6C7;
+    border-radius: 10px;
+}
+
+nav .dropdown-content {
+    display: none;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ham {
+    display: none;
+}
+
+.benhead {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+
+.ben {
+    color: #3BBA9c;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.imgg {
+    text-align: center;
+}
+
+.pa {
+    color: BLACK;
+    margin-left: 30px;
+}
+
+.benimg {
+    width: 350px;
+    height: 350px;
+    margin-left: 30px;
+}
+
+.top {
+    margin-top: 30px;
+}
+
+/* Footer Starts*/
+
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 100px;
+    color: #426281;
+    background-color: #1a1c1f;
+    margin-top: 50px;
+}
+
+footer .footer-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-cont div {
+    padding: 12px;
+}
+
+footer .socialicons i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding-top: 7px;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+footer .socialicons {
+    margin-bottom: 10px;
+}
+
+footer .socialicons i:hover {
+    background-color: #426281;
+}
+
+.footnav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footnav li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.footnav li a:hover {
+    color: #5894cf;
+    border-bottom: 2px solid #426281;
+}
+
+.footb{ 
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+
+    .hide-mainnav ul {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    nav .hamburger-btn i {
+        font-size: 30px;
+        display: block;
+    }
+
+    #touch {
+        display: none;
+    }
+
+    .ham ul {
+        position: fixed;
+        top: 118px;
+        background: #C5C6C7;
+        height: 80vh;
+        width: 100%;
+        right: -100%;
+        transition: all 0.3s ease;
+    }
+
+    #touch:checked~ul {
+        right: 0;
+    }
+
+    .ham ul li{
+        text-align: center;
+        display: block;
+        color: #000000;
+    }
+
+    .ham a {
+        text-decoration: none;
+    }
+
+    .benimg {
+        margin-left: 16px;
+    }
+
+    .ben {
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px 30px;
+    }
+
+    .footnav ul li {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+
+}
